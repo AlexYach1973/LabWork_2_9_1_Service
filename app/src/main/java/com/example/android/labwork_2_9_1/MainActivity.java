@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         List<String> wordList = new ArrayList<>();
 
         // Адаптер
-        ArrayAdapter adapter = new ArrayAdapter<>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, wordList);
         listView.setAdapter(adapter);
 
